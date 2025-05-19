@@ -1,0 +1,372 @@
+html, body {
+  font-family: 'Rubik Mono One', Courier, monospace; 
+  width:  100%;
+  height: 100%; 
+  margin: 0; 
+}
+
+body {
+  background: linear-gradient(10deg, #E9CF70, #08805ca1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.barra{
+  display: flex;
+  font-family: 'Rubik Mono One', Courier, monospace;
+  font-style: oblique;
+  font-size: xx-large;
+  color: khaki;
+  height: 10%;  
+background-color: black;
+width: 100%;
+}
+.BOTON { 
+  display: flex;
+  padding: 20px 25px;
+  height: 100px;
+  margin: 5px;
+  width: 250px;
+  background: #333;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+ font-family: 'Rubik Mono One', Courier, monospace;
+  border: solid #404c5d 1px;
+  font-size: 50px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #08805ca1, #07a072fa);
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+.BOTON:hover {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+.BOTON:active {
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  transition: 100ms;
+}
+
+.cardh {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  display: flex;
+  box-sizing: border-box;
+  width: 500PX;
+  height: 500px;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+ justify-content: center;  
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  background-image: url(imagenes/burgeropcion.png);
+  background-size: cover;
+}
+
+.cardh:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+
+
+.cardh p{
+  font-size: 45px;
+  display: flex;
+  padding-inline: 1px;
+  background-color:  #E9CF70;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Rubik Mono One', Courier, monospace;
+}
+
+.carde {
+  display: flex;
+  box-sizing: border-box;
+  width: 500PX;
+  height: 500px;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;  /* apila el texto y el botón */
+  align-items: center;      
+ justify-content: center;  
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  background-image: url(imagenes/empanadasopcion.png);
+  background-size: cover;
+}
+
+.carde:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+
+.carde p{
+   font-size: 45px;
+   font-family: 'Rubik Mono One', Courier, monospace;
+  padding-inline: 1px;
+  background-color:  #E9CF70;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+.cardp {
+  display: flex;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+ justify-content: center;  
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  background-image: url(imagenes/pizzaopcion.png);
+  background-size: cover;
+}
+
+.cardp:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+ 
+
+}
+
+
+.cardp p {
+   font-size: 45px;
+   font-family: 'Rubik Mono One', Courier, monospace;
+  padding-inline: 1px;
+  background-color:  #E9CF70;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.MENU {
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+   font-family: 'Rubik Mono One', Courier, monospace;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+ul {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  list-style: none;
+}
+
+.barra { 
+  font-family: 'Rubik Mono One', Courier, monospace;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.barra .icon-content {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  margin: 40 20px;
+  position:relative;
+}
+.barra .icon-content .tooltip {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  position: absolute;
+  margin-bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+.barra .icon-content:hover .tooltip {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  opacity: 1;
+  visibility: visible;
+  top: 2px;
+}
+ ul > .barra{
+margin-left: 7%;
+
+ }
+.barra .icon-content a {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  padding: 5%;
+  margin: 20px;
+}
+.barra .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.barra .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.barra .icon-content a:hover {
+  color: white;
+}
+.barra .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.barra .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.barra .icon-content a[data-social="whatsapp"] .filled,
+.barra .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #0aad18;
+
+}
+
+.barra .icon-content a[data-social="facebook"] .filled,
+.barra .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998;
+}
+.barra .icon-content a[data-social="instagram"] .filled,
+.barra .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+
+a {
+   font-family: 'Rubik Mono One', Courier, monospace;
+  text-decoration: none;  
+  color: inherit;         
+}
+
+footer {
+  margin-top: 30px;
+   font-family: 'Rubik Mono One', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .barra {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 10px;
+  }
+
+  .BOTON {
+    font-size: 1.5rem;
+    width: 80%;
+    max-width: none;
+  }
+
+  .MENU {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .cardh, .carde, .cardp {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .cardh p, .carde p, .cardp p {
+    font-size: 1.2rem;
+  }
+
+  footer{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .BOTON {
+    font-size: 1.2rem;
+    padding: 1em;
+  }
+
+  .cardh p, .carde p, .cardp p {
+    font-size: 1rem;
+  }
+
+  .barra .icon-content a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .barra .icon-content a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
