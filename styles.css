@@ -12,6 +12,11 @@ body {
   background-size: cover;
 }
 
+h4{
+  text-align: center;
+  font-size: 25px;
+}
+
 .barra{
   display: flex;
   font-family: 'Rubik Mono One', Courier, monospace;
